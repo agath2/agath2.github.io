@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agatha Yang — CS + Psychology</title>
+  <meta name="description" content="Bringing together code, cognition, and curiosity.">
+  <meta property="og:title" content="Agatha Yang — CS + Psychology">
+  <meta property="og:description" content="Bringing together code, cognition, and curiosity.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="top">
+    <canvas id="rings" aria-hidden="true"></canvas>
+    <!-- HERO: centered splash with monogram, tagline, scroll cue -->
+    <section class="hero">
+      <h1>Agatha Yang</h1>
+      <div class="hero-body">
+      <p class="lede">Bringing together code, cognition, and curiosity.</p>
+      <!-- <div class="cta">
+        <a class="btn" href="mailto:you@example.com">you@example.com</a>
+        <a class="btn ghost" href="resume.pdf">Resume (PDF)</a>
+      </div> -->
+      <p class="social">
+        <a href="https://github.com/agath2" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+        <a href="https://www.linkedin.com/in/agath2y/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About">&#8964;</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <h2>about me</h2>
+      <div class="about-text">
+        <p>I'm a software developer, psychology student, and researcher. I look at technology from three angles: how it's built, how people experience it, and what it teaches us about the mind.</p>
+        <p>I'm a CS and Psychology double major at <a href="https://www.tufts.edu" target="_blank" rel="noopener noreferrer">Tufts University</a>, and all three angles show up in my work. As Project Manager for a 12-developer JumboCode team, I'm leading the build of an AI-powered video transcription and metadata pipeline for <strong>Somerville Media Center</strong>, a nonprofit with a 42-year video archive. I plan our roadmap, run weekly sprints, and turn the client's needs into features the team can build.</p>
+        <p>As a Research Assistant with the <strong>Human-AI Nexus Group</strong> at Northeastern University, I design and build web-based games that study how people across the political spectrum perceive politically charged language. There, technology is a tool for understanding how people think.</p>
+        <!-- <p>I'm also a Teaching Assistant for CS160 Algorithms and Captain of the Tufts Climbing Team.</p> -->
+        <p>I'm looking for <strong>Summer 2027 internships</strong> in product management, software engineering, or UX research, especially roles that combine technical work with understanding users. Feel free to <a href="mailto:you@example.com">reach out</a>!</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>projects</h2>
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="research" role="tab" aria-selected="false">Research</button>
+        <button class="filter" data-filter="software" role="tab" aria-selected="false">Software</button>
+        <button class="filter" data-filter="leadership" role="tab" aria-selected="false">Community &amp; Leadership</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-category="research">
+          <img src="assets/project-1.jpg" alt="Screenshot of the Bridging Dictionary game suite" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Research</span>
+            <h3>Bridging Dictionary Game Suite</h3>
+            <p class="meta">2024 &bull; Research Lab</p>
+            <p>What it is, why it mattered, and what you built. Two or three sentences. Mention the question it answers.</p>
+            <div class="links"><a href="#">Demo</a><a href="#">Paper</a><a href="#">GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="software leadership">
+          <img src="assets/project-2.jpg" alt="Diagram of the video pipeline" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Software</span><span class="tag">Leadership</span>
+            <h3>SMC Video Pipeline (JumboCode)</h3>
+            <p class="meta">2025 &bull; JumboCode</p>
+            <p>What you managed, the team size, the stack, and the outcome for the client.</p>
+            <div class="links"><a href="#">GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="research">
+          <img src="assets/project-3.jpg" alt="Project 3 preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Research</span>
+            <h3>Project Three</h3>
+            <p class="meta">2024 &bull; Research Lab</p>
+            <p>Placeholder description. Keep the context, not just the tech list.</p>
+            <div class="links"><a href="#">Paper</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="software">
+          <img src="assets/project-4.jpg" alt="Project 4 preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Software</span>
+            <h3>Project Four</h3>
+            <p class="meta">2023 &bull; Self Project</p>
+            <p>Placeholder description. What problem did it solve and for whom?</p>
+            <div class="links"><a href="#">GitHub</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" hidden>
+      <h2>Research &amp; experience</h2>
+      <ul class="list">
+        <li><strong>Research Assistant</strong> <span class="meta">| 2025&ndash;present</span>
+          <p>One or two sentences on what you did and the kind of team you worked with.</p></li>
+        <li><strong>Software Lead, JumboCode</strong> <span class="meta">| 2025</span>
+          <p>One or two sentences.</p></li>
+      </ul>
+    </section>
+
+    <!-- BEYOND WORK -->
+    <section id="beyond" class="section" hidden>
+      <h2>Beyond work</h2>
+      <p>The human section. Climbing, and whatever else makes you memorable. A few sentences and maybe a photo.</p>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Agatha Yang</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
