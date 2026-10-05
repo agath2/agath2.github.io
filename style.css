@@ -89,13 +89,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .items { display: grid; gap: 40px; }
 .item { display: grid; gap: 8px; border-radius: 8px; }
 .when { margin: 0; font-size: .75rem; font-weight: 600; letter-spacing: .025em; text-transform: uppercase; color: var(--muted); line-height: 1rem; }
-.item h3 { font-size: 1rem; font-weight: 500; }
+.item h3 { font-size: 1rem; font-weight: 500; line-height: 1.375; }
+.item h3 + p { margin-top: 8px; }
 .item p { font-size: .875rem; line-height: 1.5; }
 .item .when { font-size: .75rem; line-height: 1rem; margin: 0; }
 .item p:last-child { margin-bottom: 0; }
 .mine { margin-top: 12px; }
 
-.stack { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.stack { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
 .stack li { padding: 4px 12px; border-radius: 999px; background: var(--pill-bg); color: var(--pill-text); font-size: .75rem; font-weight: 500; line-height: 1.25rem; }
 
 .links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px; font-size: .9rem; }
