@@ -1,4 +1,4 @@
-/* Dark navy by default, light cream when the system prefers light. */
+/* Dark navy theme. */
 :root {
   --bg: #0f172a;
   --text: #94a3b8;
@@ -10,21 +10,6 @@
   --pill-bg: rgba(122, 167, 255, 0.14);
   --pill-text: #b4cdff;
   --glow: rgba(122, 167, 255, 0.10);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #faf8f5;
-    --text: #4b5563;
-    --strong: #1d1b19;
-    --muted: #6b6660;
-    --accent: #3a5a94;
-    --border: rgba(29, 27, 25, 0.16);
-    --hover: rgba(29, 27, 25, 0.04);
-    --pill-bg: rgba(58, 90, 148, 0.10);
-    --pill-text: #2f4a7a;
-    --glow: rgba(58, 90, 148, 0.08);
-  }
 }
 
 * { box-sizing: border-box; }
