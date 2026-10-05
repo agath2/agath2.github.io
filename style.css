@@ -27,7 +27,7 @@ body {
 a { color: inherit; text-decoration: none; }
 h1, h2, h3 { color: var(--strong); line-height: 1.2; margin: 0; }
 p { margin: 0 0 1em; }
-strong { color: var(--strong); font-weight: 600; }
+strong { color: var(--strong); font-weight: 500; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
@@ -56,7 +56,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 
 /* Sidebar */
 .side { margin-bottom: 64px; }
-.name { font-size: clamp(2.4rem, 8vw, 3.2rem); font-weight: 700; letter-spacing: -0.025em; }
+.name { font-size: clamp(2.25rem, 8vw, 3rem); font-weight: 700; letter-spacing: -0.025em; }
 .role-line { margin: 12px 0 0; font-size: 1.15rem; font-weight: 500; color: var(--strong); }
 .tagline { max-width: 20rem; margin: 16px 0 0; }
 
@@ -83,14 +83,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(6px);
   font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--strong);
 }
-.ext { color: var(--strong); font-weight: 600; border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
+.ext { color: var(--strong); font-weight: 500; border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
 .ext:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* Experience + project rows */
 .items { display: grid; gap: 40px; }
 .item { display: grid; gap: 8px; border-radius: 8px; }
 .when { margin: 0; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); line-height: 1.7; }
-.item h3 { font-size: 1.05rem; font-weight: 600; }
+.item h3 { font-size: 1rem; font-weight: 500; }
 .item p { font-size: .95rem; }
 .item p:last-child { margin-bottom: 0; }
 .mine { margin-top: 12px; }
