@@ -119,8 +119,19 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; background: none; backdrop-filter: none;
   }
   .item { grid-template-columns: 8rem 1fr; gap: 24px; padding: 16px; margin: -16px; transition: background-color .2s; }
-  .item:hover { background: var(--hover); }
   .when { padding-top: 4px; }
+}
+
+/* Spotlight on hover/focus: the active row lifts into a card and its siblings fade back. */
+@media (min-width: 1024px) and (hover: hover) {
+  .item { transition: opacity .25s, background-color .25s, box-shadow .25s; }
+  .items:has(.item:hover) .item:not(:hover),
+  .items:has(.item:focus-within) .item:not(:focus-within) { opacity: .45; }
+  .item:hover, .item:focus-within {
+    background: linear-gradient(90deg, rgba(148, 163, 184, 0.04), rgba(122, 167, 255, 0.07));
+    box-shadow: inset 0 1px 0 rgba(148, 163, 184, 0.12), 0 20px 30px -15px rgba(2, 6, 23, 0.7);
+  }
+  .item:hover h3, .item:focus-within h3 { color: var(--accent); }
 }
 
 @media (prefers-reduced-motion: reduce) {
