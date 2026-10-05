@@ -49,9 +49,11 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 }
 
 .layout {
+  --gutter: 24px;
   position: relative; z-index: 1;
-  max-width: 1280px; margin: 0 auto; padding: 64px 24px 96px;
+  max-width: 1280px; margin: 0 auto; padding: 48px var(--gutter);
 }
+@media (min-width: 768px) { .layout { --gutter: 48px; padding-top: 64px; padding-bottom: 64px; } }
 
 /* Sidebar */
 .side { margin-bottom: 64px; }
@@ -78,7 +80,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 /* Content blocks */
 .block { margin-bottom: 80px; scroll-margin-top: 80px; }
 .block-title {
-  position: sticky; top: 0; z-index: 5; margin: 0 -24px 24px; padding: 20px 24px;
+  position: sticky; top: 0; z-index: 5; margin: 0 calc(var(--gutter) * -1) 24px; padding: 20px var(--gutter);
   background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(6px);
   font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--strong);
 }
@@ -120,11 +122,11 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 
 /* Two-column desktop layout: fixed sidebar, scrolling content */
 @media (min-width: 1024px) {
-  .layout { display: flex; justify-content: space-between; gap: 64px; padding: 0 96px; }
+  .layout { display: flex; justify-content: space-between; gap: 16px; padding-top: 0; padding-bottom: 0; }
   .side {
     position: sticky; top: 0; align-self: flex-start;
     display: flex; flex-direction: column; justify-content: space-between;
-    width: 44%; height: 100vh; height: 100dvh; padding: 96px 0; margin: 0;
+    width: 48%; height: 100vh; height: 100dvh; padding: 96px 0; margin: 0;
   }
   .nav { display: block; }
   .content { width: 52%; padding: 96px 0; }
